@@ -1,0 +1,17 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "description": "Простий вебдодаток з багатокроковою формою та адмінкою",
+  "main": "backend/index.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "nodemon backend/index.js"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
