@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Опитування</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 400px; margin: 20px auto; }
+    .hidden { display: none; }
+    .step { margin-bottom: 20px; }
+    button { padding: 10px 20px; font-size: 16px; }
+    #progress { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Опитування</h1>
+
+  <div id="progress"></div>
+
+  <form id="surveyForm">
+    <div class="step" id="step0">
+      <label>1. Який ваш улюблений колір?<br />
+        <input type="text" name="q1" required />
+      </label>
+    </div>
+    <div class="step hidden" id="step1">
+      <label>2. Яка ваша улюблена їжа?<br />
+        <input type="text" name="q2" required />
+      </label>
+    </div>
+    <div class="step hidden" id="step2">
+      <label>3. Яке ваше хобі?<br />
+        <input type="text" name="q3" required />
+      </label>
+    </div>
+    <div class="step hidden" id="step3">
+      <label>4. Ваш улюблений фільм?<br />
+        <input type="text" name="q4" required />
+      </label>
+    </div>
+    <div class="step hidden" id="step4">
+      <label>5. Яка ваша мрія?<br />
+        <input type="text" name="q5" required />
+      </label>
+    </div>
+
+    <button type="button" id="prevBtn" disabled>Назад</button>
+    <button type="button" id="nextBtn">Далі</button>
+    <button type="submit" class="hidden" id="submitBtn">Відправити</button>
+  </form>
+
+  <div id="message"></div>
+
+  <script src="form.js"></script>
+</body>
+</html>
